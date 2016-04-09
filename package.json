@@ -1,0 +1,22 @@
+{
+  "name": "quickstyle",
+  "version": "1.0.0",
+  "description": "The CSS and JavaScript styles I used in the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qint/quickstyle.git"
+  },
+  "author": "Qingtian Gan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qint/quickstyle/issues"
+  },
+  "homepage": "https://github.com/Qint/quickstyle",
+  "devDependencies": {
+    "webpack": "^1.12.14"
+  }
+}
