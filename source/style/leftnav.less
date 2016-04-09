@@ -1,0 +1,41 @@
+/* 后台管理系统中的左侧导航栏的样式
+* Author:   Ricardoo Gan
+* Date:     2016-04-10
+*/
+@import "util.less"
+
+.qt-leftnav {
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    width: @leftnav-width;
+    color: @leftnav-frcolor;
+    background-color: @leftnav-bgcolor;
+    overflow-y: scroll;
+    /* 隐藏滚动条 */
+    scrollbar-face-color: @leftnav-bgcolor;	/*IE中的滚动条的颜色 */
+	/*scrollbar-3dlight-color: #303641;*/
+	scrollbar-highlight-color: @leftnav-bgcolor;
+	scrollbar-shadow-color: @leftnav-bgcolor;
+	scrollbar-arrow-color: @leftnav-bgcolor;
+
+    /* webkit引擎的样式 */
+    &::-webkit-scroll {
+        width: 0px;
+    }
+
+    /*内部子元素的样式*/
+    .qt-leftnav-header {
+        min-height: @leftnav-header-height;
+        border-bottom: @leftnav-border;
+    }
+
+    .qt-leftnav-group {
+
+    }
+
+    .qt-leftnav-footer {
+
+    }
+}
