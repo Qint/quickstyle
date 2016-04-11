@@ -29,13 +29,45 @@
     .qt-leftnav-header {
         min-height: @leftnav-header-height;
         border-bottom: @leftnav-border;
+        padding-top: 30px;
+        padding-bottom: 5px;
     }
 
     .qt-leftnav-group {
+        display: block;
+        margin:0px;
+        padding: 0px;
+        .group-item {
+            display: block;
+            margin: 3px 8px;
+            color: @leftnav-brcolor;
+            border-radius: 3px;
+            &:hover {
+                background-color: @leftnav-bgcolor-hv;
+                cursor: pointer;
+            }
 
+            .sub-list {
+                display: none;
+                padding-left: 53px;
+                padding-bottom: 1px;
+                li {
+                    display: block;
+                    margin-bottom: 12px;
+                    font-size: @leftnav-fontsize-sub;
+                    color: @leftnav-frcolor;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+            &.focusing .sublist {
+                display: block;
+            }
+        }
     }
 
     .qt-leftnav-footer {
-
+        
     }
 }
